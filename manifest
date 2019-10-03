@@ -1,7 +1,7 @@
 #CellFie
 #Wed Oct 02 20:13:21 UTC 2019
 JVMLevel=
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.0
 author=Benjamin Kellman;UC San Diego
 commandLine=sh /CellFie/matlab_compiled/execCellfie/for_redistribution_files_only/run_execCellfie.sh /usr/local/MATLAB/MATLAB_Runtime/v94 <data> <SampleNumber> <ref> <param.ThreshType> <param.percentile_or_value> <param.LocalThresholdType> <param.percentile_value_low> <param.percentile_value_high> ./
 cpuType=any
