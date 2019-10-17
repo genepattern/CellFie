@@ -18,12 +18,12 @@
 name: global_percentile
 module: CellFie
 params:
-    "data": "input/dataTest.csv"
+    "InputData": "input/dataTest.csv"
     "SampleNumber": 3
-    "ref": "MT_recon_2_2_entrez.mat"
-    "param.ThreshType": "global"
-    "param.percentile_or_value": "percentile"
-    "param.percentile_value_low": 50
+    "ReferenceModel": "MT_recon_2_2_entrez.mat"
+    "ThreshType": "global"
+    "PercentileOrValue": "percentile"
+    "ThresholdLowerBound": 50
 
 assertions:
     jobStatus: success
