@@ -21,12 +21,12 @@
 name: global_value
 module: CellFie
 params:
-    "data": "input/dataTest.csv"
+    "InputData": "input/dataTest.csv"
     "SampleNumber": 3
-    "ref": "MT_recon_2_2_entrez.mat"
-    "param.ThreshType": "global"
-    "param.percentile_or_value": "value"
-    "param.percentile_value_low": 50
+    "ReferenceModel": "MT_recon_2_2_entrez.mat"
+    "ThreshType": "global"
+    "PercentileOrValue": "value"
+    "ThresholdLowerBound": 50
     job.memory: "8 Gb"
 
 assertions:

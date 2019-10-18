@@ -1,3 +1,7 @@
+# Metabolic Task Modeling with CellFie
+
+Contact: Alex Wenzel (atwenzel@ucsd.edu)
+
 # Computation framework of the metabolic tasks
 
 We define a metabolic task as the capacity of producing a defined list of output products when only a defined list of input substrates is available. For each available reference genome-scale model, we computed the list of task the model successfully passed (i.e. list of functions the model is able to describe). If a task successfully passes in a model, we determined the set of reactions associated to this task. Therefore, based on the GPR rules, we can enumerate the genes that may contribute to the acquisition of this metabolic function.
@@ -55,11 +59,11 @@ The curation has been done by first taking the union of previously published lis
 
 # Parameters
 
-- **data**\* - 	A .mat or .csv expression matrix with rows corresponding to genes and columns corresponding to samples. Should contain a header row starting with "genes" and containing all of the sample names.
-- **SampleNumber**\* - The number of samples in the input file to analyze
-- **ref**\* - Name of the reference model to use to compute metabolic task scores
-- **param\_ThreshType**\* - 	The thresholding type to use - global or local
-- **param\_percentile\_or\_value**\* - The type of threshold to use, either user-supplied cutoff values or cutoff percentiles
-- **param\_LocalThresholdType**\* - The type of local thresholding, either minmaxmean or mean
-- **param\_percentile\_value\_low**\* - The lower bound to use for thresholding, either a value or a percentile
-- **param\_percentile\_value\_high**\* - The upper bound to use for thresholding, either a value or a percentile
+- **InputData**\* -     A .mat or .csv expression matrix with rows corresponding to genes and columns corresponding to samples. Should contain a header row starting with "genes" and containing all of the sample names.
+- **SampleNumber**\* -  The number of samples in the input file to analyze
+- **ReferenceModel**\* -    Name of the reference model to use to compute metabolic task scores
+- **ThreshType**\* - 	The thresholding type to use - global or local
+- **PercentileOrValue**\* - The type of threshold to use, either user-supplied cutoff values or cutoff percentiles
+- **LocalThresholdType**\* - The type of local thresholding, either minmaxmean or mean
+- **ThresholdLowerBound**\* - The lower bound to use for thresholding, either a value or a percentile
+- **ThresholdUpperBound**\* - The upper bound to use for thresholding, either a value or a percentile

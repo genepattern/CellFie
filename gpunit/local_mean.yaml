@@ -20,11 +20,11 @@
 name: local_mean
 module: CellFie
 params:
-    "data": "input/dataTest.csv"
+    "InputData": "input/dataTest.csv"
     "SampleNumber": 3
-    "ref": "MT_recon_2_2_entrez.mat"
-    "param.ThreshType": "local"
-    "param.LocalThresholdType": "mean"
+    "ReferenceModel": "MT_recon_2_2_entrez.mat"
+    "ThreshType": "local"
+    "LocalThresholdType": "mean"
     job.memory: "8 Gb"
 
 assertions:
