@@ -3,7 +3,7 @@
 JVMLevel=
 LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.1
 author=Benjamin Kellman;UC San Diego
-commandLine=sh /CellFie/matlab_compiled/execCellfie/for_redistribution_files_only/run_execCellfie.sh /usr/local/MATLAB/MATLAB_Runtime/v94 <InputData> <SampleNumber> <ReferenceModel> <ThreshType> <PercentileOrValue> <LocalThresholdType> <ThresholdLowerBound>  ./ <ThresholdUpperBound>
+commandLine=sh /CellFie/matlab_compiled/execCellfie/for_redistribution_files_only/run_execCellfie.sh /usr/local/MATLAB/MATLAB_Runtime/v94 <InputData> <SampleNumber> <ReferenceModel> <ThreshType> <PercentileOrValue> <LocalThresholdType> <ThresholdLowerBound> <ThresholdUpperBound> ./ 
 cpuType=any
 description=The CellFie analysis
 fileFormat=
