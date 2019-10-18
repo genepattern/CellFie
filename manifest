@@ -1,7 +1,7 @@
 #CellFie
 #Thu Oct 17 18:31:08 UTC 2019
 JVMLevel=
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.0
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.1
 author=Benjamin Kellman;UC San Diego
 commandLine=sh /CellFie/matlab_compiled/execCellfie/for_redistribution_files_only/run_execCellfie.sh /usr/local/MATLAB/MATLAB_Runtime/v94 <InputData> <SampleNumber> <ReferenceModel> <ThreshType> <PercentileOrValue> <LocalThresholdType> <ThresholdLowerBound>  ./ <ThresholdUpperBound>
 cpuType=any
@@ -130,4 +130,4 @@ taskDoc=doc.html
 taskType=Pathway Analysis
 categories=metabolomics
 userid=atwenzel2
-version=Initial version (1.0)
+version=Initial version (1.0) + cleaning up parameter names
