@@ -1,21 +1,21 @@
 #CellFie
-#Thu Oct 17 18:31:08 UTC 2019
+#Fri Feb 14 18:30:50 UTC 2020
 JVMLevel=
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.1
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.3
 author=Benjamin Kellman;UC San Diego
-commandLine=sh /CellFie/matlab_compiled/execCellfie/for_redistribution_files_only/run_execCellfie.sh /usr/local/MATLAB/MATLAB_Runtime/v94 <InputData> <SampleNumber> <ReferenceModel> <ThreshType> <PercentileOrValue> <LocalThresholdType> <ThresholdLowerBound> <ThresholdUpperBound> ./ 
+categories=metabolomics
+commandLine=sh /CellFie/matlab_compiled/execCellfie/for_redistribution_files_only/run_execCellfie.sh /usr/local/MATLAB/MATLAB_Runtime/v94 <InputData> <SampleNumber> <ReferenceModel> <ThreshType> <PercentileOrValue> <LocalThresholdType> <ThresholdLowerBound> <ThresholdUpperBound> ./
 cpuType=any
 description=The CellFie analysis
 fileFormat=
-job.docker.image=genepattern/cellfie\:0.2.2
+job.docker.image=genepattern/cellfie\:0.3.1
 language=MATLAB
 name=CellFie
 os=any
-
 p1_MODE=IN
 p1_TYPE=FILE
 p1_default_value=
-p1_description=A .mat or .csv expression matrix with rows corresponding to genes and columns corresponding to samples. Should contain a header row starting with "genes" and containing all of the sample names.
+p1_description=A .mat, .csv, or .xlsx expression matrix with rows corresponding to genes and columns corresponding to samples. Should contain a header row starting with "genes" and containing all of the sample names.
 p1_fileFormat=csv
 p1_flag=
 p1_name=InputData
@@ -25,7 +25,6 @@ p1_prefix=
 p1_prefix_when_specified=
 p1_type=java.io.File
 p1_value=
-
 p2_MODE=
 p2_TYPE=Integer
 p2_default_value=
@@ -39,7 +38,6 @@ p2_prefix=
 p2_prefix_when_specified=
 p2_type=java.lang.Integer
 p2_value=
-
 p3_MODE=
 p3_TYPE=TEXT
 p3_default_value=MT_recon_2_2_entrez.mat
@@ -53,7 +51,6 @@ p3_prefix=
 p3_prefix_when_specified=
 p3_type=java.lang.String
 p3_value=MT_recon_2_2_entrez.mat\=MT_recon_2_2_entrez.mat;MT_iCHOv1_final.mat\=MT_iCHOv1_final.mat;MT_iHsa.mat\=MT_iHsa.mat;MT_iMM1415.mat\=MT_iMM1415.mat;MT_iRno.mat\=MT_iRno.mat;MT_inesMouseModel.mat\=MT_inesMouseModel.mat;MT_quek14.mat\=MT_quek14.mat;MT_recon_1.mat\=MT_recon_1.mat;MT_recon_2.mat\=MT_recon_2.mat;MT_recon_2_2.mat\=MT_recon_2_2.mat
-
 p4_MODE=
 p4_TYPE=TEXT
 p4_default_value=local
@@ -67,7 +64,6 @@ p4_prefix=
 p4_prefix_when_specified=
 p4_type=java.lang.String
 p4_value=local\=local;global\=global
-
 p5_MODE=
 p5_TYPE=TEXT
 p5_default_value=value
@@ -81,7 +77,6 @@ p5_prefix=
 p5_prefix_when_specified=
 p5_type=java.lang.String
 p5_value=value\=value;percentile\=percentile
-
 p6_MODE=
 p6_TYPE=TEXT
 p6_default_value=minmaxmean
@@ -95,7 +90,6 @@ p6_prefix=
 p6_prefix_when_specified=
 p6_type=java.lang.String
 p6_value=minmaxmean\=minmaxmean;mean\=mean
-
 p7_MODE=
 p7_TYPE=Floating Point
 p7_default_value=25
@@ -109,7 +103,6 @@ p7_prefix=
 p7_prefix_when_specified=
 p7_type=java.lang.Float
 p7_value=
-
 p8_MODE=
 p8_TYPE=Floating Point
 p8_default_value=75
@@ -123,11 +116,10 @@ p8_prefix=
 p8_prefix_when_specified=
 p8_type=java.lang.Float
 p8_value=
-
-privacy=public
+privacy=private
+publicationDate=10/18/2019 15\:24
 quality=production
 taskDoc=doc.html
-taskType=Pathway Analysis
-categories=metabolomics
+taskType=metabolomics
 userid=atwenzel2
-version=Initial version (1.0) + cleaning up parameter names
+version=Added .xlsx as valid input format 
