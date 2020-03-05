@@ -1,14 +1,14 @@
 #CellFie
 #Fri Feb 14 18:30:50 UTC 2020
 JVMLevel=
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.3
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.4
 author=Benjamin Kellman;UC San Diego
 categories=metabolomics
 commandLine=sh /CellFie/matlab_compiled/execCellfie/for_redistribution_files_only/run_execCellfie.sh /usr/local/MATLAB/MATLAB_Runtime/v94 <InputData> <SampleNumber> <ReferenceModel> <ThreshType> <PercentileOrValue> <LocalThresholdType> <ThresholdLowerBound> <ThresholdUpperBound> ./
 cpuType=any
 description=The CellFie analysis
 fileFormat=
-job.docker.image=genepattern/cellfie\:0.3.1
+job.docker.image=genepattern/cellfie\:0.4.1
 language=MATLAB
 name=CellFie
 os=any
@@ -122,4 +122,4 @@ quality=production
 taskDoc=doc.html
 taskType=metabolomics
 userid=atwenzel2
-version=Added .xlsx as valid input format 
+version=Incorporating bug fixes from devs
