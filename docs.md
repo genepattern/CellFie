@@ -1,5 +1,8 @@
 # **CellFie**: Cellular Functions InferencE
 
+![Cellfie_Logo](https://github.com/bkellman/CellFie/blob/master/logo_with_name.png)
+
+
 An alternative approach to capture the breadth of cellular functions by performing a functional analysis of existing biological networks.
 
 
@@ -12,8 +15,8 @@ For issues with the GenePattern module, please contact atwenzel@eng.ucsd.edu
 
 ## Input:
 **Gene expression matrix can be provide in .mat, .csv, or .xlsx**
-- For **.mat** files, you need to provide a structure variable (named e.g. data) containing a cell field named “genes” containing the NCBI Entrez gene ID (one gene by cell) and a double field named “value” containing a matrix with gene expression value for each of the sample you want to evaluate (i.e. with rows corresponding to genes and columns corresponding to samples). See available example dataTest.mat. (attach a link for downloading the following document “dataTest.mat”)
-- For **.csv or .xlsx** files, you need to provide an expression matrix with rows corresponding to genes and columns corresponding to samples. The first column is the list of genes NCBI Entrez gene ID and the first header row should start with “genes” and be followed by the name of each sample present in your dataset. See available example dataTest.csv.(attach a link for downloading the following document “dataTest.csv”)
+- For **.mat** files, you need to provide a structure variable (named e.g. data) containing a cell field named “genes” containing the NCBI Entrez gene ID (one gene by cell) and a double field named “value” containing a matrix with gene expression value for each of the sample you want to evaluate (i.e. with rows corresponding to genes and columns corresponding to samples). See available example [dataTest.mat](https://github.com/bkellman/CellFie/blob/master/test/suite/dataTest.mat)
+- For **.csv or .xlsx** files, you need to provide an expression matrix with rows corresponding to genes and columns corresponding to samples. The first column is the list of genes NCBI Entrez gene ID and the first header row should start with “genes” and be followed by the name of each sample present in your dataset. See available example [dataTest.csv](https://github.com/bkellman/CellFie/blob/master/test/suite/dataTest.csv) or [dataTest.xlsx](https://github.com/bkellman/CellFie/blob/master/test/suite/dataTest.xlsx)
 
 Note: The list of genes and associated NCBI Entrez ID present in each reference model can be [downloaded here](https://github.com/bkellman/CellFie/raw/master/docs/NCBI_Entrez_gene_ID_models.xlsx)
 
