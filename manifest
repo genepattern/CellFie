@@ -122,4 +122,4 @@ quality=production
 taskDoc=doc.html
 taskType=metabolomics
 userid=atwenzel2
-version=Incorporating bug fixes from devs
+version=Incorporating bug fixes from devs to release version 1.5
