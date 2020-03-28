@@ -1,12 +1,12 @@
 #CellFie
 #Fri Feb 14 18:30:50 UTC 2020
 JVMLevel=
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.4
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:1.5
 author=Benjamin Kellman;UC San Diego
 categories=metabolomics
 commandLine=sh /CellFie/matlab_compiled/execCellfie/for_redistribution_files_only/run_execCellfie.sh /usr/local/MATLAB/MATLAB_Runtime/v94 <InputData> <SampleNumber> <ReferenceModel> <ThreshType> <PercentileOrValue> <LocalThresholdType> <ThresholdLowerBound> <ThresholdUpperBound> ./
 cpuType=any
-description=The CellFie analysis
+description=CellFie\: Cellular Functions InferencE  - An alternative approach to capture the breadth of cellular functions by performing a functional analysis of existing biological networks. Please refer to the documentation for details about the procedure\n\n
 fileFormat=
 job.docker.image=genepattern/cellfie\:0.4.1
 language=MATLAB
@@ -15,7 +15,7 @@ os=any
 p1_MODE=IN
 p1_TYPE=FILE
 p1_default_value=
-p1_description=A .mat, .csv, or .xlsx expression matrix with rows corresponding to genes and columns corresponding to samples. Should contain a header row starting with "genes" and containing all of the sample names.
+p1_description=Gene expression matrix can be provide in .mat or .csv. For .mat files, you need to provide a structure variable (named e.g. data) containing a cell field named "genes" containing the NCBI Entrez gene ID (one gene by cell) and a double field named "value" containing a matrix with gene expression value for each of the sample you want to evaluate (i.e. with rows corresponding to genes and columns corresponding to samples). See available example dataTest.mat. (attach a link for downloading the following document "dataTest.mat") For csv. files, you need to provide an expression matrix with rows corresponding to genes and columns corresponding to samples. The first column is the list of genes NCBI Entrez gene ID and the first header row should start with "genes" and be followed by the name of each sample present in your dataset. See available example dataTest.csv.(https\://github.com/LewisLabUCSD/CellFie/blob/master/test/suite/dataTest.csv)\nThe list of genes and associated NCBI Entrez ID present in each reference model can be\ndownloaded here (https\://github.com/LewisLabUCSD/CellFie/raw/master/docs/NCBI_Entrez_gene_ID_models.xlsx).
 p1_fileFormat=csv
 p1_flag=
 p1_name=InputData
@@ -50,7 +50,7 @@ p3_optional=
 p3_prefix=
 p3_prefix_when_specified=
 p3_type=java.lang.String
-p3_value=MT_recon_2_2_entrez.mat\=MT_recon_2_2_entrez.mat;MT_iCHOv1_final.mat\=MT_iCHOv1_final.mat;MT_iHsa.mat\=MT_iHsa.mat;MT_iMM1415.mat\=MT_iMM1415.mat;MT_iRno.mat\=MT_iRno.mat;MT_inesMouseModel.mat\=MT_inesMouseModel.mat;MT_quek14.mat\=MT_quek14.mat;MT_recon_1.mat\=MT_recon_1.mat;MT_recon_2.mat\=MT_recon_2.mat;MT_recon_2_2.mat\=MT_recon_2_2.mat
+p3_value=MT_recon_2_2_entrez.mat\=Human_recon_2_2;MT_iCHOv1_final.mat\=CHO_iCHOv1;MT_iHsa.mat\=Human_iHsa;MT_iMM1415.mat\=Mosue_iMM1415;MT_iRno.mat\=Rat_iRn
 p4_MODE=
 p4_TYPE=TEXT
 p4_default_value=local
@@ -122,4 +122,4 @@ quality=production
 taskDoc=doc.html
 taskType=metabolomics
 userid=atwenzel2
-version=Incorporating bug fixes from devs
+version=Incorporating bug fixes from devs to release version 1.5
