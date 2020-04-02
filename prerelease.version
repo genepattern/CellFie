@@ -1,3 +1,5 @@
+#updated after building 1.6
+#Thu, 02 Apr 2020 18:05:36 -0400
 #updated after building 1.5
 #Fri, 27 Mar 2020 16:52:48 -0400
 #updated after building 2.4
@@ -8,4 +10,4 @@
 #Fri, 18 Oct 2019 15:24:33 -0400
 #updated after building 1.1
 #Fri, 18 Oct 2019 14:57:23 -0400
-prerelease.number=6
+prerelease.number=7
