@@ -1,4 +1,4 @@
-#Cellfie_param_update_2020_04_15
+#CellFie
 #Thu Apr 23 00:53:16 UTC 2020
 JVMLevel=
 LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:2.0
@@ -134,4 +134,4 @@ quality=development
 taskDoc=doc.html
 taskType=metabolomics
 userid=atwenzel2
-version=Adding an advanced parameters foldout section + other minor UI adjustments.
+version=Adding an advanced parameters foldout section + other minor UI adjustments (Cellfie_param_update_2020_04_15).
