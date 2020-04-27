@@ -1,3 +1,3 @@
 # CellFie
 
-GenePattern Module for CellFie, see [documentation](https://github.com/genepattern/CellFie/blob/develop/docs.md) for more info.
+GenePattern Module for CellFie, see [documentation](https://github.com/LewisLabUCSD/CellFie/wiki) for more info.
