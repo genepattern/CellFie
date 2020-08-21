@@ -23,14 +23,14 @@
 name: local_minmaxmean_percentile
 module: CellFie
 params:
-    "InputData": "input/dataTest.csv"
-    "SampleNumber": 3
-    "ReferenceModel": "MT_recon_2_2_entrez.mat"
-    "ThreshType": "local"
-    "PercentileOrValue": "percentile"
-    "LocalThresholdType": "minmaxmean"
-    "ThresholdLowerBound": 25
-    "ThresholdUpperBound": 75
+    "Data": "input/dataTest.csv"
+    "Sample.Number": 3
+    "Referenc.eModel": "MT_recon_2_2_entrez.mat"
+    "Thresholding.Approach": "local"
+    "Percentile.Or.Value": "percentile"
+    "Local.Threshold.Type": "minmaxmean"
+    "Local.Lower.Bound": 25
+    "Local.Upper.Bound": 75
 
 assertions:
     jobStatus: success
