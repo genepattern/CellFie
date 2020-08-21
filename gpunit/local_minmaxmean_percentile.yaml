@@ -25,7 +25,7 @@ module: CellFie
 params:
     "Data": "input/dataTest.csv"
     "Sample.Number": 3
-    "Referenc.eModel": "MT_recon_2_2_entrez.mat"
+    "Referenc.eModel": "Human_recon_2_2"
     "Thresholding.Approach": "local"
     "Percentile.Or.Value": "percentile"
     "Local.Threshold.Type": "minmaxmean"

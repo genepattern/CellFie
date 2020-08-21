@@ -22,7 +22,7 @@ module: CellFie
 params:
     "Data": "input/dataTest.csv"
     "Sample.Number": 3
-    "Reference.Model": "MT_recon_2_2_entrez.mat"
+    "Reference.Model": "Human_recon_2_2"
     "Thresholding.Approach": "local"
     "Local.Threshold.Type": "mean"
     job.memory: "8 Gb"
