@@ -36,9 +36,9 @@ assertions:
     jobStatus: success
     files:
     files:
-        "detail_scoring":
+        "detailScoring.csv":
             diff: "output/dataRecon22_local_minmaxmean_percentile.detailScoring.csv"
-        "mat":
+        "cellfieout.mat":
             diff: "output/dataRecon22_local_minmaxmean_percentile.mat"
-        "task_info":
+        "taskInfo.csv":
             diff: "output/dataRecon22_local_minmaxmean_percentile.taskInfo.csv"
