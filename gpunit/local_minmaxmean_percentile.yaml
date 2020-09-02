@@ -35,7 +35,10 @@ params:
 assertions:
     jobStatus: success
     files:
-        "score.csv":
-            diff: "output/dataRecon22_local_minmaxmean_percentile.score.csv"
-        "score_binary.csv":
-            diff: "output/dataRecon22_local_minmaxmean_percentile.score_binary.csv"
+    files:
+        "detail_scoring":
+            diff: "output/dataRecon22_local_minmaxmean_percentile.detailScoring.csv"
+        "mat":
+            diff: "output/dataRecon22_local_minmaxmean_percentile.mat"
+        "task_info":
+            diff: "output/dataRecon22_local_minmaxmean_percentile.taskInfo.csv"

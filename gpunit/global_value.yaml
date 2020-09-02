@@ -32,7 +32,9 @@ params:
 assertions:
     jobStatus: success
     files:
-        "score.csv":
-            diff: "output/dataRecon22_global_value.score.csv"
-        "score_binary.csv":
-            diff: "output/dataRecon22_global_value.score_binary.csv"
+        "detail_scoring":
+            "diff": "output/dataRecon22_global_value.detailScoring.csv"
+        "mat":
+            diff: "output/dataRecon22_global_value.mat"
+        "task_info":
+            diff: "output/dataRecon22_global_valuetaskInfo.csv"

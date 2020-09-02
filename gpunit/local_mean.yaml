@@ -30,7 +30,9 @@ params:
 assertions:
     jobStatus: success
     files:
-        "score.csv":
-            diff: "output/dataRecon22_local_mean.score.csv"
-        "score_binary.csv":
-            diff: "output/dataRecon22_local_mean.score_binary.csv"
+        "detail_scoring":
+            diff: "output/dataRecon22_local_mean.detailScoring.csv"
+        "mat":
+            diff: "output/dataRecon22_local_mean.mat"
+        "task_info":
+            diff: "output/dataRecon22_local_mean.taskInfo.csv"
