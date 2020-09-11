@@ -23,7 +23,7 @@ params:
     "Reference.Model": "Human_recon_2_2"
     "Thresholding.Approach": "global"
     "Percentile.Or.Value": "percentile"
-    "Local.Lower.Bound": 50
+    "Global.Cutoff": 50
 
 assertions:
     jobStatus: success
