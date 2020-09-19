@@ -28,11 +28,7 @@ params:
 assertions:
     jobStatus: success
     files:
-        #"detailScoring.csv":
-        #    diff: "output/dataRecon22_global_percentile.detailScoring.csv"
         "score.csv":
             diff: "output/dataRecon22_global_percentile.score.csv"
-        "cellfieout.mat":
-            diff: "output/dataRecon22_global_percentile.mat"
-        "taskInfo.csv":
-            diff: "output/dataRecon22_global_percentile.taskInfo.csv"
+        "score_binary.csv":
+            diff: "output/dataRecon22_global_percentile.score_binary.csv"
