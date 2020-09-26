@@ -1,0 +1,20 @@
+The gene expression matrix can be provided in a <b>.mat</b> or <b>.csv</b> format.
+<p>
+For <b>.mat</b> files, you need to provide a structure variable (named e.g. "data")
+containing a cell field named "genes" with NCBI Entrez gene IDs (one gene per cell)
+and a double field named "value" containing a matrix with gene expression values
+for each of the samples you want to evaluate (i.e. with rows corresponding to genes
+and columns corresponding to samples). See available example
+<a href=https://github.com/LewisLabUCSD/CellFie/blob/master/test/suite/dataTest.mat>
+    dataTest.mat</a>.
+<p>
+For <b>.csv</b> files, you need to provide an expression matrix with rows corresponding
+to genes and columns corresponding to samples. The first column is the list of genes
+with NCBI Entrez gene IDs and the first header row should start with "genes" and
+be followed by the name of each sample present in your dataset. See the available
+<a href=https://github.com/LewisLabUCSD/CellFie/blob/master/test/suite/dataTest.csv>
+    dataTest.csv</a>
+The list of genes and associated NCBI Entrez IDs present in each reference model
+can be downloaded
+<a href=https://github.com/LewisLabUCSD/CellFie/raw/master/docs/NCBI_Entrez_gene_ID_models.xlsx>
+    here</a>.
