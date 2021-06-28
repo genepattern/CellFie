@@ -2,14 +2,24 @@
     {
         "name": "Basic Parameters",
         "description": "These parameters are essential for the analysis.",
-        "parameters": ["Data", "Sample.Number", "Reference.Model"],
+        "parameters": [
+            "Data",
+            "Sample.Number",
+            "Reference.Model"
+        ],
         "hidden": false
     },
     {
         "name": "Advanced Parameters",
         "description": "Additional algorithmic parameters with standard defaults",
-        "parameters": ["Thresholding.Approach", "Percentile.Or.Value", "Global.Cutoff",
-            "Local.Threshold.Type", "Local.Lower.Bound", "Local.Upper.Bound"],
+        "parameters": [
+            "Thresholding.Approach",
+            "Percentile.Or.Value",
+            "Global.Cutoff",
+            "Local.Threshold.Type",
+            "Local.Lower.Bound",
+            "Local.Upper.Bound"
+        ],
         "hidden": true
     }
 ]
