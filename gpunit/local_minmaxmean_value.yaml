@@ -23,17 +23,18 @@
 name: local_minmaxmean_value
 module: CellFie
 params:
-    "InputData": "input/dataTest.csv"
-    "SampleNumber": 3
-    "ReferenceModel": "MT_recon_2_2_entrez.mat"
-    "ThreshType": "local"
-    "PercentileOrValue": "value"
-    "LocalThresholdType": "minmaxmean"
-    "ThresholdLowerBound": 25
-    "ThresholdUpperBound": 75
+    "Data": "input/dataTest.csv"
+    "Sample.Number": 3
+    "Reference.Model": "Human_recon_2_2"
+    "Thresholding.Approach": "local"
+    "Percentile.Or.Value": "value"
+    "Local.Threshold.Type": "minmaxmean"
+    "Local.Lower.Bound": 25
+    "Local.Upper.Bound": 75
 
 assertions:
     jobStatus: success
+    files:
     files:
         "score.csv":
             diff: "output/dataRecon22_local_minmaxmean_value.score.csv"
