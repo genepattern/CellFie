@@ -18,7 +18,7 @@
 #T = cell2table(taskInfos);
 #writetable(T,'dataRecon22_global_value.taskInfo.csv');
 
-name: global_value
+name: CellFie_global_value
 module: CellFie
 params:
     "Data": "input/dataTest.csv"

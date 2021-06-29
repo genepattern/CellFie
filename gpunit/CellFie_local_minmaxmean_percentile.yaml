@@ -20,7 +20,7 @@
 #T = cell2table(taskInfos);
 #writetable(T,'dataRecon22_local_minmaxmean_percentile.taskInfo.csv');
 
-name: local_minmaxmean_percentile
+name: CellFie_local_minmaxmean_percentile
 module: CellFie
 params:
     "Data": "input/dataTest.csv"

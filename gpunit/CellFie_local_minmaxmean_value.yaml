@@ -20,7 +20,7 @@
 #T = cell2table(taskInfos);
 #writetable(T,'dataRecon22_local_minmaxmean_value.taskInfo.csv');
 
-name: local_minmaxmean_value
+name: CellFie_local_minmaxmean_value
 module: CellFie
 params:
     "Data": "input/dataTest.csv"

@@ -17,7 +17,7 @@
 #T = cell2table(taskInfos);
 #writetable(T,'dataRecon22_local_mean.taskInfo.csv');
 
-name: local_mean
+name: CellFie_local_mean
 module: CellFie
 params:
     "Data": "input/dataTest.csv"

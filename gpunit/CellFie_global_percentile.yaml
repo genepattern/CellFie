@@ -15,7 +15,7 @@
 #csvwrite('dataRecon22_global_percentile.score_binary.csv',score_binary);
 #writetable(T,'dataRecon22_global_percentile.taskInfo.csv');
 
-name: global_percentile
+name: CellFie_global_percentile
 module: CellFie
 params:
     "Data": "input/dataTest.csv"
