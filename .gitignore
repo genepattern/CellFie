@@ -2,3 +2,4 @@ gpunit/reports/*
 reports/*
 *zip
 .DS_Store
+.idea/

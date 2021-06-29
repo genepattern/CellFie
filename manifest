@@ -1,14 +1,15 @@
 #CellFie
-#Sat Sep 26 00:04:04 UTC 2020
+#Tue Jun 29 22:26:56 UTC 2021
 JVMLevel=
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:5.2
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00405\:4.3
 author=Benjamin Kellman;UC San Diego
 categories=metabolomics
 commandLine=sh /CellFie/matlab_compiled/execCellfie/for_redistribution_files_only/run_execCellfie.sh /usr/local/MATLAB/MATLAB_Runtime/v94 <Data> <Sample.Number> <Reference.Model> <Thresholding.Approach> <Percentile.Or.Value> <Global.Cutoff> <Local.Threshold.Type> <Local.Lower.Bound> <Local.Upper.Bound> ./
 cpuType=any
 description=CellFie\: Cellular Functions InferencE - An alternative approach to capture the breadth of cellular functions by performing a functional analysis of existing biological networks. Please refer to the documentation for details about the procedure.
-fileFormat=
-job.docker.image=genepattern/cellfie\:v0.6.1
+documentationUrl=
+fileFormat=csv;mat
+job.docker.image=genepatterndev/cellfie\:v0.7.0
 language=any
 name=CellFie
 os=any
@@ -130,9 +131,10 @@ p9_prefix_when_specified=
 p9_type=java.lang.String
 p9_value=
 privacy=public
-publicationDate=09/03/2020 18\:42
-quality=preproduction
+publicationDate=06/28/2021 18\:00 
+quality=production
+src.repo=https\://github.com/LewisLabUCSD/CellFie
 taskDoc=doc.html
 taskType=metabolomics
 userid=atwenzel2
-version=HTML input data description
+version=update to reaction models

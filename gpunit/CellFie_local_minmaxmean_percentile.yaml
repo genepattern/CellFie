@@ -8,26 +8,26 @@
 #SampleNumber=3;
 #ref='MT_recon_2_2_entrez.mat';
 #param.ThreshType='local';
-#param.percentile_or_value='value';
+#param.percentile_or_value='percentile';
 #param.LocalThresholdType='minmaxmean';
-#param.value_low=25;
-#param.value_high=75;
+#param.percentile_low=25;
+#param.percentile_high=75;
 
 #[score, score_binary ,taskInfos, detailScoring]=CellFie(data,SampleNumber,ref,param);
-#save dataRecon22_local_minmaxmean_value score score_binary taskInfos detailScoring
-#csvwrite('dataRecon22_local_minmaxmean_value.score.csv',score);
-#csvwrite('dataRecon22_local_minmaxmean_value.score_binary.csv',score_binary);
+#save dataRecon22_local_minmaxmean_percentile score score_binary taskInfos detailScoring
+#csvwrite('dataRecon22_local_minmaxmean_percentile.score.csv',score);
+#csvwrite('dataRecon22_local_minmaxmean_percentile.score_binary.csv',score_binary);
 #T = cell2table(taskInfos);
-#writetable(T,'dataRecon22_local_minmaxmean_value.taskInfo.csv');
+#writetable(T,'dataRecon22_local_minmaxmean_percentile.taskInfo.csv');
 
-name: local_minmaxmean_value
+name: CellFie_local_minmaxmean_percentile
 module: CellFie
 params:
     "Data": "input/dataTest.csv"
     "Sample.Number": 3
-    "Reference.Model": "Human_recon_2_2"
+    "Referenc.eModel": "Human_recon_2_2"
     "Thresholding.Approach": "local"
-    "Percentile.Or.Value": "value"
+    "Percentile.Or.Value": "percentile"
     "Local.Threshold.Type": "minmaxmean"
     "Local.Lower.Bound": 25
     "Local.Upper.Bound": 75
@@ -37,6 +37,6 @@ assertions:
     files:
     files:
         "score.csv":
-            diff: "output/dataRecon22_local_minmaxmean_value.score.csv"
+            diff: "output/dataRecon22_local_minmaxmean_percentile.score.csv"
         "score_binary.csv":
-            diff: "output/dataRecon22_local_minmaxmean_value.score_binary.csv"
+            diff: "output/dataRecon22_local_minmaxmean_percentile.score_binary.csv"
